@@ -31,5 +31,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':library')
+    compile 'com.talobin:library:0.1.0'
+
 }

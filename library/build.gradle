@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
-
+//ext {
+//    bintrayRepo = 'maven'
+//    bintrayName = 'card-entry'
+//
+//    publishedGroupId = 'com.talobin'
+//    libraryName = 'CardEntry'
+//    artifact = 'card-entry'
+//
+//    libraryDescription = 'A lightweight library to enter Credit Card number of any kind'
+//
+//    siteUrl = 'https://github.com/talobin/cardentry'
+//    gitUrl = 'https://github.com/talobin/cardentry.git'
+//
+//    libraryVersion = '0.1.0'
+//
+//    developerId = 'talobin'
+//    developerName = 'Hai Vo'
+//    developerEmail = 'vodinhhai@gmail.com'
+//
+//    licenseName = 'The Apache Software License, Version 2.0'
+//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//    allLicenses = ["Apache-2.0"]
+//}
+//apply from: 'push.gradle'
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
 android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
@@ -25,6 +49,9 @@ android {
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 

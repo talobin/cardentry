@@ -44,13 +44,6 @@
         <dex dex="/Users/hai/Documents/Source Code/Mine/cardentry/SampleApp/build/intermediates/pre-dexed/debug/codemodel-2.6-d24c06182fed3c268ae5bdd089c6922bb44766ef.jar" />
     </item>
     <item
-        jar="/Users/hai/Documents/Source Code/Mine/cardentry/SampleApp/build/intermediates/exploded-aar/CardEntry/library/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="b44063e36d80d4997e3626b02db859684ead7b40">
-        <dex dex="/Users/hai/Documents/Source Code/Mine/cardentry/SampleApp/build/intermediates/pre-dexed/debug/classes-7b092c4093fd52007aad5422a27f3b61773ce759.jar" />
-    </item>
-    <item
         jar="/Users/hai/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/0.2.9/8bdc21f8dbdcc0cb51d562c5bc47497660930342/parceler-api-0.2.9.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -63,6 +56,13 @@
         revision="22.0.1"
         sha1="9ae020c2a776e25175fe824d162bd56cca4495e9">
         <dex dex="/Users/hai/Documents/Source Code/Mine/cardentry/SampleApp/build/intermediates/pre-dexed/debug/transfuse-support-0.2.10-6a281b048f3dcd1cc0e332f7e7323b97827262f4.jar" />
+    </item>
+    <item
+        jar="/Users/hai/Documents/Source Code/Mine/cardentry/SampleApp/build/intermediates/exploded-aar/com.talobin/library/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e8652215daf6343996f93abf7a7b8648198356b9">
+        <dex dex="/Users/hai/Documents/Source Code/Mine/cardentry/SampleApp/build/intermediates/pre-dexed/debug/classes-381beeae380eafd30c155dff7637cd34ff7b0cf0.jar" />
     </item>
     <item
         jar="/Users/hai/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.0/427662b038bd8f52097f783f6ea163e45851b2a1/commons-beanutils-1.9.0.jar"
