@@ -1,0 +1,77 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+    <style name="Edit" parent="android:Widget.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:inputType">none</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+    <style name="Text" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="keypad">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/keypad_paddingTop</item>
+        <item name="android:paddingBottom">@dimen/keypad_paddingBottom</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:textIsSelectable">false</item>
+    </style>
+    <style name="dialog_button">
+        <item name="android:paddingTop">@dimen/content_padding</item>
+        <item name="android:paddingBottom">@dimen/content_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/touch_feedback</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="dialog_button.disable">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/lightest_gray</item>
+        <item name="android:clickable">false</item>
+    </style>
+    <style name="backspace">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingRight">@dimen/content_padding_2</item>
+        <item name="android:paddingLeft">@dimen/content_padding_2</item>
+    </style>
+
+</resources>

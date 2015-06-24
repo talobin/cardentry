@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CardEntry</string>
+
+    <string name="test_welcome">Sample Usage of CardEntry</string>
+    <string name="result_section">Entered Information:</string>
+    <string name="dialog_section">Use as a Dialog</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="card_number_result">Card number:</string>
+    <string name="expiry_result">Expiry:</string>
+    <string name="cvv_result">CVV:</string>
+    <string name="zip_result">Zip:</string>
+</resources>

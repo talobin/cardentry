@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.haivo.cardentry">
+    <application android:allowBackup="true">
+        <activity android:name=".ui.CardEntryActivity"
+                  android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"/>
+    </application>
+
+</manifest>

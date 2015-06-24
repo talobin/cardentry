@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="transfuse-support-0.2.10">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.androidtransfuse/transfuse-support/0.2.10/9ae020c2a776e25175fe824d162bd56cca4495e9/transfuse-support-0.2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.androidtransfuse/transfuse-support/0.2.10/da3896188245b360f0d12bfbcc4d27d5923d24df/transfuse-support-0.2.10-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

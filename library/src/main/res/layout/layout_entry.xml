@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+    <com.haivo.cardentry.views.FieldCardNumber
+        style="@style/Edit"
+        android:id="@+id/Field_card_number"
+        android:gravity="left"
+        android:hint="@string/enter_card_number"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:visibility="gone"
+                  android:id="@+id/Layout_entry_root"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/Text"
+            android:gravity="center_vertical"
+            android:id="@+id/TextView_four_digits"/>
+        <com.haivo.cardentry.views.FieldExpDate
+            style="@style/Edit"
+            android:hint="@string/mm_yy"
+            android:id="@+id/Field_exp_date"/>
+        <com.haivo.cardentry.views.FieldSecurityCode
+            style="@style/Edit"
+            android:hint="@string/cvv"
+            android:id="@+id/Field_security_code"/>
+        <com.haivo.cardentry.views.FieldZipCode
+            style="@style/Edit"
+            android:hint="@string/zip"
+            android:id="@+id/Field_zip_code"/>
+    </LinearLayout>
+</merge>

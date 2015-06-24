@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:id="@+id/Layout_form_root">
+    <com.haivo.cardentry.views.KeyPadView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:background="#fff"
+                                          android:paddingTop="@dimen/content_padding"
+                                          android:paddingBottom="@dimen/content_padding"
+                                          android:layout_below="@+id/Layout_entry"
+                                          android:id="@+id/View_key_pad"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/Layout_entry">
+        <com.haivo.cardentry.views.CreditCardEntry android:layout_width="0dp"
+                                                   android:layout_height="match_parent"
+                                                   android:layout_weight="1"
+                                                   android:background="#fff"
+                                                   android:paddingLeft="@dimen/content_padding_2"
+                                                   android:gravity="center_vertical"
+                                                   android:id="@+id/View_card_entry"/>
+
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/Layout_card_image"
+                     android:foregroundGravity="center"
+                     android:background="#fff"
+                     android:paddingRight="@dimen/content_padding_2"
+                     android:paddingBottom="@dimen/content_padding"
+                     android:paddingTop="@dimen/content_padding">
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:adjustViewBounds="true"
+                       android:src="@drawable/cc_back"
+                       android:visibility="gone"
+                       android:id="@+id/ImageView_card_back"
+                />
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/ImageView_card_front"
+                       android:adjustViewBounds="true"
+                       android:src="@drawable/unknown_cc"/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:adjustViewBounds="true"
+                       android:src="@drawable/unknown_cc"
+                       android:visibility="gone"
+                       android:id="@+id/ImageView_card_brand"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:background="@color/seperator"
+          android:layout_below="@+id/View_key_pad"
+          android:id="@+id/View_seperator"
+          android:layout_height="0.5dp"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="#ffffff"
+                  android:layout_below="@+id/View_seperator"
+                  android:layout_height="wrap_content">
+        <TextView style="@style/dialog_button"
+                  android:id="@+id/TextView_negative_button"
+                  android:text="@string/close"/>
+        <View android:layout_width="0.5dp"
+              android:layout_height="match_parent"
+              android:background="@color/seperator"/>
+        <TextView style="@style/dialog_button.disable"
+                  android:id="@+id/TextView_positive_button"
+                  android:text="@string/use_this_card"/>
+    </LinearLayout>
+
+</RelativeLayout>

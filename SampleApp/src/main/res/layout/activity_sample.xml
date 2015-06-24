@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              tools:context=".SampleActivity">
+
+    <TextView
+        android:text="@string/test_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+          android:paddingTop="@dimen/activity_horizontal_margin"
+          android:paddingBottom="@dimen/activity_horizontal_margin"
+          android:background="@android:color/darker_gray"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/dialog_section"
+              android:layout_gravity="center_horizontal"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/show_dialog"
+            android:id="@+id/Btn_show_dialog"/>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+          android:paddingTop="@dimen/activity_horizontal_margin"
+          android:paddingBottom="@dimen/activity_horizontal_margin"
+          android:background="@android:color/darker_gray"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/result_section"
+              android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/Txt_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/card_number_result"/>
+    <TextView
+        android:id="@+id/Txt_card_expiry" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expiry_result"/>
+    <TextView
+        android:id="@+id/Txt_card_cvv" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cvv_result"/>
+    <TextView
+        android:id="@+id/Txt_card_zip" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zip_result"/>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="stroke">#000</color>
+    <color name="grey_dark">#fff</color>
+    <color name="grey_light">#ddd</color>
+    <color name="touch_feedback">#26000000</color>
+    <color name="seperator">#26000000</color>
+    <color name="lightest_gray">#cfcfcf</color>
+    <color name="secondary_text">#8F8F8F</color>
+    <color name="primary_text">#565656</color>
+</resources>
