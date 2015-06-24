@@ -1,6 +1,6 @@
-package com.haivo.cardentry.models;
+package com.talobin.cardentry.models.models;
 
-import com.haivo.cardentry.utils.CreditCardUtil;
+import com.talobin.cardentry.utils.utils.CreditCardUtil;
 import org.parceler.Parcel;
 
 @Parcel public class Card {

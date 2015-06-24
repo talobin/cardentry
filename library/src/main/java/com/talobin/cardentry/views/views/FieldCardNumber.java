@@ -1,11 +1,11 @@
-package com.haivo.cardentry.views;
+package com.talobin.cardentry.views.views;
 
 import android.content.Context;
 import android.text.Editable;
 import android.util.AttributeSet;
-import com.haivo.cardentry.interfaces.CreditCardDelegate;
-import com.haivo.cardentry.models.Card.CardType;
-import com.haivo.cardentry.utils.CreditCardUtil;
+import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.models.models.Card.CardType;
+import com.talobin.cardentry.utils.utils.CreditCardUtil;
 
 /**
  * Created by hai on 4/17/15.

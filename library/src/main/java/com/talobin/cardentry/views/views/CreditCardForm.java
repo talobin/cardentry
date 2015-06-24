@@ -1,4 +1,4 @@
-package com.haivo.cardentry.views;
+package com.talobin.cardentry.views.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.haivo.cardentry.R;
-import com.haivo.cardentry.interfaces.Callback;
-import com.haivo.cardentry.interfaces.CreditCardDelegate;
-import com.haivo.cardentry.models.Card;
+import com.talobin.cardentry.R;
+import com.talobin.cardentry.interfaces.interfaces.Callback;
+import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.models.models.Card;
 
 /**
  * Created by hai on 4/17/15.

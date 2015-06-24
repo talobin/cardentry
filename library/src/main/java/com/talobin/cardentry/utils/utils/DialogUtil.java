@@ -1,15 +1,15 @@
-package com.haivo.cardentry.utils;
+package com.talobin.cardentry.utils.utils;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-import com.haivo.cardentry.R;
-import com.haivo.cardentry.interfaces.Callback;
-import com.haivo.cardentry.models.Card;
-import com.haivo.cardentry.views.CreditCardEntry;
-import com.haivo.cardentry.views.CreditCardForm;
+import com.talobin.cardentry.R;
+import com.talobin.cardentry.interfaces.interfaces.Callback;
+import com.talobin.cardentry.models.models.Card;
+import com.talobin.cardentry.views.views.CreditCardEntry;
+import com.talobin.cardentry.views.views.CreditCardForm;
 
 /**
  * Created by hai on 5/3/15.

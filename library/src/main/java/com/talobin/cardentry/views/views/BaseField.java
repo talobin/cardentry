@@ -1,4 +1,4 @@
-package com.haivo.cardentry.views;
+package com.talobin.cardentry.views.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.view.View.OnKeyListener;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputConnectionWrapper;
 import android.widget.EditText;
-import com.haivo.cardentry.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
 
 /**
  * Created by hai on 4/17/15.

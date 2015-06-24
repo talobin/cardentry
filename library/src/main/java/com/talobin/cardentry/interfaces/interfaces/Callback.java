@@ -1,4 +1,4 @@
-package com.haivo.cardentry.interfaces;
+package com.talobin.cardentry.interfaces.interfaces;
 
 /**
  * Created by hai on 5/4/15.

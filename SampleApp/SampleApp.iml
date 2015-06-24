@@ -97,8 +97,8 @@
     <orderEntry type="library" exported="" name="transfuse-support-0.2.10" level="project" />
     <orderEntry type="library" exported="" name="commons-collections-3.2.1" level="project" />
     <orderEntry type="library" exported="" name="parceler-api-0.2.9" level="project" />
-    <orderEntry type="library" exported="" name="codemodel-2.6" level="project" />
     <orderEntry type="library" exported="" name="jsr305-2.0.3" level="project" />
+    <orderEntry type="library" exported="" name="codemodel-2.6" level="project" />
     <orderEntry type="library" exported="" name="transfuse-bootstrap-0.2.10" level="project" />
     <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="parceler-0.2.9" level="project" />

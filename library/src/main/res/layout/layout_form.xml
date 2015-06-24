@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="#ffffff"
     android:id="@+id/Layout_form_root">
-    <com.haivo.cardentry.views.KeyPadView android:layout_width="wrap_content"
+    <com.talobin.cardentry.views.views.KeyPadView android:layout_width="wrap_content"
                                           android:layout_height="wrap_content"
                                           android:background="#fff"
                                           android:paddingTop="@dimen/content_padding"
@@ -17,7 +17,7 @@
                   android:layout_height="wrap_content"
                   android:orientation="horizontal"
                   android:id="@+id/Layout_entry">
-        <com.haivo.cardentry.views.CreditCardEntry android:layout_width="0dp"
+        <com.talobin.cardentry.views.views.CreditCardEntry android:layout_width="0dp"
                                                    android:layout_height="match_parent"
                                                    android:layout_weight="1"
                                                    android:background="#fff"

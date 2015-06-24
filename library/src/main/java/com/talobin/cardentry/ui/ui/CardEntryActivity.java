@@ -1,4 +1,4 @@
-package com.haivo.cardentry.ui;
+package com.talobin.cardentry.ui.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,12 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.haivo.cardentry.R;
-import com.haivo.cardentry.models.Card;
-import com.haivo.cardentry.views.CreditCardForm;
-import com.haivo.cardentry.views.FieldExpDate;
-import com.haivo.cardentry.views.FieldSecurityCode;
-import com.haivo.cardentry.views.FieldZipCode;
+import com.talobin.cardentry.R;
+import com.talobin.cardentry.models.models.Card;
+import com.talobin.cardentry.views.views.CreditCardForm;
+import com.talobin.cardentry.views.views.FieldExpDate;
+import com.talobin.cardentry.views.views.FieldSecurityCode;
+import com.talobin.cardentry.views.views.FieldZipCode;
 import org.parceler.Parcels;
 
 /**

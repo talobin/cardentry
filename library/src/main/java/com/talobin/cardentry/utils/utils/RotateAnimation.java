@@ -1,4 +1,4 @@
-package com.haivo.cardentry.utils;
+package com.talobin.cardentry.utils.utils;
 
 import android.graphics.Camera;
 import android.graphics.Matrix;

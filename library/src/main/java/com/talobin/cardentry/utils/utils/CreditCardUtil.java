@@ -1,8 +1,8 @@
-package com.haivo.cardentry.utils;
+package com.talobin.cardentry.utils.utils;
 
 import android.annotation.SuppressLint;
-import com.haivo.cardentry.R;
-import com.haivo.cardentry.models.Card.CardType;
+import com.talobin.cardentry.R;
+import com.talobin.cardentry.models.models.Card.CardType;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -1,4 +1,4 @@
-package com.haivo.cardentry.views;
+package com.talobin.cardentry.views.views;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -27,13 +27,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.haivo.cardentry.R;
-import com.haivo.cardentry.interfaces.Callback;
-import com.haivo.cardentry.interfaces.CreditCardDelegate;
-import com.haivo.cardentry.models.Card;
-import com.haivo.cardentry.models.Card.CardType;
-import com.haivo.cardentry.utils.CreditCardUtil;
-import com.haivo.cardentry.utils.RotateAnimation;
+import com.talobin.cardentry.R;
+import com.talobin.cardentry.interfaces.interfaces.Callback;
+import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.models.models.Card;
+import com.talobin.cardentry.models.models.Card.CardType;
+import com.talobin.cardentry.utils.utils.CreditCardUtil;
+import com.talobin.cardentry.utils.utils.RotateAnimation;
 
 /**
  * Created by hai on 4/17/15.

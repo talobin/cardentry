@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content">
-    <com.haivo.cardentry.views.FieldCardNumber
+    <com.talobin.cardentry.views.views.FieldCardNumber
         style="@style/Edit"
         android:id="@+id/Field_card_number"
         android:gravity="left"
@@ -16,15 +16,15 @@
             style="@style/Text"
             android:gravity="center_vertical"
             android:id="@+id/TextView_four_digits"/>
-        <com.haivo.cardentry.views.FieldExpDate
+        <com.talobin.cardentry.views.views.FieldExpDate
             style="@style/Edit"
             android:hint="@string/mm_yy"
             android:id="@+id/Field_exp_date"/>
-        <com.haivo.cardentry.views.FieldSecurityCode
+        <com.talobin.cardentry.views.views.FieldSecurityCode
             style="@style/Edit"
             android:hint="@string/cvv"
             android:id="@+id/Field_security_code"/>
-        <com.haivo.cardentry.views.FieldZipCode
+        <com.talobin.cardentry.views.views.FieldZipCode
             style="@style/Edit"
             android:hint="@string/zip"
             android:id="@+id/Field_zip_code"/>

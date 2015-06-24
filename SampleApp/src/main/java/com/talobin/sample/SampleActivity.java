@@ -1,4 +1,4 @@
-package com.haivo.sample;
+package com.talobin.sample;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import com.haivo.cardentry.models.Card;
-import com.haivo.cardentry.ui.CardEntryActivity;
+import com.talobin.cardentry.models.models.Card;
+import com.talobin.cardentry.ui.ui.CardEntryActivity;
 import org.parceler.Parcels;
 
 public class SampleActivity extends Activity {
