@@ -4,7 +4,7 @@ Inspired by Square and https://github.com/dbachelder/CreditCardEntry
 
 Usage:
 - Include in your project : 
-      dependencies {
+          dependencies {
 
         ...
 
