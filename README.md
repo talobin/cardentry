@@ -4,14 +4,14 @@ Inspired by Square and https://github.com/dbachelder/CreditCardEntry
 
 Usage:
 - Include in your project : 
-     dependencies {
+      dependencies {
 
         ...
 
         compile 'com.talobin:card-entry:0.1.2'
-    }
+          }
 - Start the activity:
- Intent scanIntent = new Intent(YourActivity.this,
+       Intent scanIntent = new Intent(YourActivity.this,
                                                                                 CardEntryActivity.class);
 
                                                  // customize these values to suit your needs.
