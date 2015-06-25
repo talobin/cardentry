@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.talobin.cardentry.ui.ui.CardEntryActivity"/>
+            android:name="com.talobin.cardentry.ui.CardEntryActivity"/>
     </application>
 
 </manifest>

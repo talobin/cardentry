@@ -1,4 +1,4 @@
-package com.talobin.cardentry.ui.ui;
+package com.talobin.cardentry.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,7 +12,6 @@ import com.talobin.cardentry.views.views.CreditCardForm;
 import com.talobin.cardentry.views.views.FieldExpDate;
 import com.talobin.cardentry.views.views.FieldSecurityCode;
 import com.talobin.cardentry.views.views.FieldZipCode;
-import org.parceler.Parcels;
 
 /**
  * Created by hai on 6/23/15.
@@ -85,7 +84,7 @@ public class CardEntryActivity extends Activity {
                     //Toast.makeText(context, "TEST", Toast.LENGTH_SHORT).show();
                     final Card card = form.getCreditCard();
                     final Intent resultData = new Intent();
-                    resultData.putExtra(EXTRA_CARD_INFO, Parcels.wrap(card));
+                    resultData.putExtra(EXTRA_CARD_INFO, card);
                     setResult(Activity.RESULT_OK, resultData);
                     finish();
                 }

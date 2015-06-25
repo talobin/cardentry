@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.talobin.cardentry">
     <application android:allowBackup="true">
-        <activity android:name="com.talobin.cardentry.ui.ui.CardEntryActivity"
+        <activity android:name="com.talobin.cardentry.ui.CardEntryActivity"
                   android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"/>
     </application>
 

@@ -36,7 +36,7 @@ public class FieldZipCode extends BaseField {
 
     public void afterTextChanged(Editable s) {
         String zipCode = s.toString();
-        if (zipCode.length() == 5) {
+        if (zipCode.length() == 5 || isDisabled()) {
             mDelegate.onZipCodeValid();
             setValid(true);
         } else {

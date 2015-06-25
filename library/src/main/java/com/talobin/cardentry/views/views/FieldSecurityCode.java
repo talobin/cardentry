@@ -42,44 +42,49 @@ public class FieldSecurityCode extends BaseField {
 
     public void afterTextChanged(Editable s) {
         removeTextChangedListener(this);
-        if (mType != null) {
-            final String number = s.toString();
-            final int currentLength = number.length();
-            //Case1: length meets requirement
-            //-> accepts this code
-            if (currentLength == mRequiredLength) {
-                mDelegate.onSecurityCodeValid();
-                mPreviouslyAcceptedCode = number;
-                setValid(true);
-            }
-
-            //Case2: length exceed requirement
-            // -> revert back to previously-accepted code
-            // if there is none, clear the field
-            //TODO: undo instead of clear
-            else if (currentLength > mRequiredLength) {
-
-                if (TextUtils.isEmpty(mPreviouslyAcceptedCode)) {
-                    setValid(false);
-                    setText("");
-                } else {
+        if (isDisabled()) {
+            mDelegate.onSecurityCodeValid();
+            setValid(true);
+        } else {
+            if (mType != null) {
+                final String number = s.toString();
+                final int currentLength = number.length();
+                //Case1: length meets requirement
+                //-> accepts this code
+                if (currentLength == mRequiredLength) {
                     mDelegate.onSecurityCodeValid();
+                    mPreviouslyAcceptedCode = number;
                     setValid(true);
-                    setText(mPreviouslyAcceptedCode);
+                }
+
+                //Case2: length exceed requirement
+                // -> revert back to previously-accepted code
+                // if there is none, clear the field
+                //TODO: undo instead of clear
+                else if (currentLength > mRequiredLength) {
+
+                    if (TextUtils.isEmpty(mPreviouslyAcceptedCode)) {
+                        setValid(false);
+                        setText("");
+                    } else {
+                        mDelegate.onSecurityCodeValid();
+                        setValid(true);
+                        setText(mPreviouslyAcceptedCode);
+                    }
+                }
+
+                //Case3: length is too short
+                //-> set Valid flag to false and does nothing else
+                else {
+                    setValid(false);
                 }
             }
-
-            //Case3: length is too short
-            //-> set Valid flag to false and does nothing else
+            //If type is unknown, does not allow user to enter
             else {
-                setValid(false);
+                setText("");
             }
+            addTextChangedListener(this);
         }
-        //If type is unknown, does not allow user to enter
-        else {
-            setText("");
-        }
-        addTextChangedListener(this);
     }
 
     public CardType getType() {

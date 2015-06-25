@@ -71,7 +71,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dependency-cache" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex-cache" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.talobin/library/0.1.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -89,20 +88,6 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="commons-beanutils-1.9.0" level="project" />
-    <orderEntry type="library" exported="" name="transfuse-api-0.2.10" level="project" />
-    <orderEntry type="library" exported="" name="guava-15.0" level="project" />
-    <orderEntry type="library" exported="" name="library-0.1.0" level="project" />
-    <orderEntry type="library" exported="" name="transfuse-core-0.2.10" level="project" />
-    <orderEntry type="library" exported="" name="aopalliance-1.0" level="project" />
-    <orderEntry type="library" exported="" name="commons-lang-2.6" level="project" />
-    <orderEntry type="library" exported="" name="transfuse-support-0.2.10" level="project" />
-    <orderEntry type="library" exported="" name="commons-collections-3.2.1" level="project" />
-    <orderEntry type="library" exported="" name="parceler-api-0.2.9" level="project" />
-    <orderEntry type="library" exported="" name="jsr305-2.0.3" level="project" />
-    <orderEntry type="library" exported="" name="codemodel-2.6" level="project" />
-    <orderEntry type="library" exported="" name="transfuse-bootstrap-0.2.10" level="project" />
-    <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
-    <orderEntry type="library" exported="" name="parceler-0.2.9" level="project" />
+    <orderEntry type="module" module-name="library" exported="" />
   </component>
 </module>

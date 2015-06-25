@@ -1,9 +1,42 @@
 package com.talobin.cardentry.models.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import com.talobin.cardentry.utils.utils.CreditCardUtil;
-import org.parceler.Parcel;
 
-@Parcel public class Card {
+public class Card implements Parcelable {
+    public Card(Parcel source) {
+        mCardNumber = source.readString();
+        mExpiry = source.readString();
+        mSecurityCode = source.readString();
+        mZipCode = source.readString();
+        mExpDate = source.readString();
+        mExpYear = source.readString();
+    }
+
+    public static final Creator<Card> CREATOR = new Creator<Card>() {
+        @Override public Card createFromParcel(Parcel in) {
+            return new Card(in);
+        }
+
+        @Override public Card[] newArray(int size) {
+            return new Card[size];
+        }
+    };
+
+    @Override public int describeContents() {
+        return hashCode();
+    }
+
+    @Override public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(mCardNumber);
+        dest.writeString(mExpiry);
+        dest.writeString(mSecurityCode);
+        dest.writeString(mZipCode);
+        dest.writeString(mExpDate);
+        dest.writeString(mExpYear);
+    }
+
     public enum CardType {
         VISA, MASTERCARD, AMEX, DISCOVER, INVALID;
     }

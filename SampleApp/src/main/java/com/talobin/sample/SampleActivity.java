@@ -7,8 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import com.talobin.cardentry.models.models.Card;
-import com.talobin.cardentry.ui.ui.CardEntryActivity;
-import org.parceler.Parcels;
+import com.talobin.cardentry.ui.CardEntryActivity;
 
 public class SampleActivity extends Activity {
 
@@ -44,8 +43,7 @@ public class SampleActivity extends Activity {
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == MY_SCAN_REQUEST_CODE) {
             if (resultCode == CardEntryActivity.RESULT_OK) {
-                Card enterdCard =
-                    Parcels.unwrap(data.getParcelableExtra(CardEntryActivity.EXTRA_CARD_INFO));
+                Card enterdCard = data.getParcelableExtra(CardEntryActivity.EXTRA_CARD_INFO);
                 if (enterdCard != null) {
                     final TextView cardNumber = (TextView) findViewById(R.id.Txt_card_number);
                     cardNumber.setText(getResources().getString(R.string.card_number_result)

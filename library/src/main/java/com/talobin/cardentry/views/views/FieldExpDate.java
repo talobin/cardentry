@@ -55,11 +55,16 @@ public class FieldExpDate extends BaseField implements View.OnFocusChangeListene
     public void afterTextChanged(Editable s) {
         //Log.d("CRAP", "AFTER :" + s.toString());
         this.removeTextChangedListener(this);
-        final String currentString = s.toString();
-        if (!currentString.equals(mPreviousString)) {
-            final int currentLength = currentString.length();
-            final int seperatorPosition = currentString.indexOf(CreditCardUtil.DATE_SEPERATOR);
-            formatExpirationDate(currentString, currentLength, seperatorPosition);
+        if (isDisabled()) {
+            mDelegate.onExpirationDateValid();
+            setValid(true);
+        } else {
+            final String currentString = s.toString();
+            if (!currentString.equals(mPreviousString)) {
+                final int currentLength = currentString.length();
+                final int seperatorPosition = currentString.indexOf(CreditCardUtil.DATE_SEPERATOR);
+                formatExpirationDate(currentString, currentLength, seperatorPosition);
+            }
         }
         this.addTextChangedListener(this);
     }
