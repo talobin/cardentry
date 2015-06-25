@@ -1,4 +1,4 @@
-package com.talobin.cardentry.views.views;
+package com.talobin.cardentry.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.talobin.cardentry.R;
-import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.interfaces.CreditCardDelegate;
 
 /**
  * Created by hai on 4/30/15.

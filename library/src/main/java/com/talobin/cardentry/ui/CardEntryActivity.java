@@ -7,11 +7,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.talobin.cardentry.R;
-import com.talobin.cardentry.models.models.Card;
-import com.talobin.cardentry.views.views.CreditCardForm;
-import com.talobin.cardentry.views.views.FieldExpDate;
-import com.talobin.cardentry.views.views.FieldSecurityCode;
-import com.talobin.cardentry.views.views.FieldZipCode;
+import com.talobin.cardentry.models.Card;
+import com.talobin.cardentry.views.CreditCardForm;
+import com.talobin.cardentry.views.FieldExpDate;
+import com.talobin.cardentry.views.FieldSecurityCode;
+import com.talobin.cardentry.views.FieldZipCode;
 
 /**
  * Created by hai on 6/23/15.

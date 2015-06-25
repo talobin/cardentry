@@ -1,4 +1,4 @@
-package com.talobin.cardentry.views.views;
+package com.talobin.cardentry.views;
 
 import android.content.Context;
 import android.text.Editable;

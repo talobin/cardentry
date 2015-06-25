@@ -1,11 +1,11 @@
-package com.talobin.cardentry.views.views;
+package com.talobin.cardentry.views;
 
 import android.content.Context;
 import android.text.Editable;
 import android.util.AttributeSet;
-import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
-import com.talobin.cardentry.models.models.Card.CardType;
-import com.talobin.cardentry.utils.utils.CreditCardUtil;
+import com.talobin.cardentry.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.models.Card.CardType;
+import com.talobin.cardentry.utils.CreditCardUtil;
 
 /**
  * Created by hai on 4/17/15.

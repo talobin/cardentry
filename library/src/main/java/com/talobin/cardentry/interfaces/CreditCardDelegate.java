@@ -1,9 +1,9 @@
-package com.talobin.cardentry.interfaces.interfaces;
+package com.talobin.cardentry.interfaces;
 
 import android.view.KeyEvent;
 import android.widget.EditText;
-import com.talobin.cardentry.models.models.Card;
-import com.talobin.cardentry.views.views.BaseField;
+import com.talobin.cardentry.models.Card;
+import com.talobin.cardentry.views.BaseField;
 
 /**
  * Created by hai on 4/20/15.

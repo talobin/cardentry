@@ -1,4 +1,4 @@
-package com.talobin.cardentry.views.views;
+package com.talobin.cardentry.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.view.View.OnKeyListener;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputConnectionWrapper;
 import android.widget.EditText;
-import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.interfaces.CreditCardDelegate;
 
 /**
  * Created by hai on 4/17/15.

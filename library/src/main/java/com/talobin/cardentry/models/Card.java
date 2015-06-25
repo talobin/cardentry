@@ -1,8 +1,8 @@
-package com.talobin.cardentry.models.models;
+package com.talobin.cardentry.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.talobin.cardentry.utils.utils.CreditCardUtil;
+import com.talobin.cardentry.utils.CreditCardUtil;
 
 public class Card implements Parcelable {
     public Card(Parcel source) {

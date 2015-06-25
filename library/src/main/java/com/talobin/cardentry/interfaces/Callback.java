@@ -1,4 +1,4 @@
-package com.talobin.cardentry.interfaces.interfaces;
+package com.talobin.cardentry.interfaces;
 
 /**
  * Created by hai on 5/4/15.

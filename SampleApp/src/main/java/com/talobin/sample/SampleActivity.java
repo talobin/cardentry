@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import com.talobin.cardentry.models.models.Card;
+import com.talobin.cardentry.models.Card;
 import com.talobin.cardentry.ui.CardEntryActivity;
 
 public class SampleActivity extends Activity {

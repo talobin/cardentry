@@ -1,8 +1,8 @@
-package com.talobin.cardentry.utils.utils;
+package com.talobin.cardentry.utils;
 
 import android.annotation.SuppressLint;
 import com.talobin.cardentry.R;
-import com.talobin.cardentry.models.models.Card.CardType;
+import com.talobin.cardentry.models.Card.CardType;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

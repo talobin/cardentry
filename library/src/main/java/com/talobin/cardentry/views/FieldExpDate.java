@@ -1,10 +1,10 @@
-package com.talobin.cardentry.views.views;
+package com.talobin.cardentry.views;
 
 import android.content.Context;
 import android.text.Editable;
 import android.util.AttributeSet;
 import android.view.View;
-import com.talobin.cardentry.utils.utils.CreditCardUtil;
+import com.talobin.cardentry.utils.CreditCardUtil;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.talobin.cardentry.views.views;
+package com.talobin.cardentry.views;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -28,12 +28,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.talobin.cardentry.R;
-import com.talobin.cardentry.interfaces.interfaces.Callback;
-import com.talobin.cardentry.interfaces.interfaces.CreditCardDelegate;
-import com.talobin.cardentry.models.models.Card;
-import com.talobin.cardentry.models.models.Card.CardType;
-import com.talobin.cardentry.utils.utils.CreditCardUtil;
-import com.talobin.cardentry.utils.utils.RotateAnimation;
+import com.talobin.cardentry.interfaces.Callback;
+import com.talobin.cardentry.interfaces.CreditCardDelegate;
+import com.talobin.cardentry.models.Card;
+import com.talobin.cardentry.models.Card.CardType;
+import com.talobin.cardentry.utils.CreditCardUtil;
+import com.talobin.cardentry.utils.RotateAnimation;
 
 /**
  * Created by hai on 4/17/15.
