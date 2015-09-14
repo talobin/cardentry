@@ -65,6 +65,7 @@ public void onShowEntryPress(View v) {
 ```
 
 Next, we'll override `onActivityResult()` to get the info that user has entered.
+We assume that you have setup serveral `TextView`s to display the result.
 
 ```java
 @Override
