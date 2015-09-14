@@ -30,7 +30,7 @@ compile 'com.talobin:card-entry:0.1.4'
                   android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"/>
     ```
 3. That's it, no extra permission is needed
-4. 
+
 ##### Note: Before you build in release mode, make sure to adjust your proguard configuration by adding the following to `proguard.cnf`:
 
 ```
