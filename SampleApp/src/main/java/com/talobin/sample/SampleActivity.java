@@ -11,7 +11,7 @@ import com.talobin.cardentry.ui.CardEntryActivity;
 
 public class SampleActivity extends Activity {
 
-    private static final int MY_SCAN_REQUEST_CODE = 12345;
+    private static final int MY_ENTRY_REQUEST_CODE = 12345;
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +33,7 @@ public class SampleActivity extends Activity {
 
                                                  // MY_SCAN_REQUEST_CODE is arbitrary and is only used within this activity.
                                                  startActivityForResult(scanIntent,
-                                                                        MY_SCAN_REQUEST_CODE);
+                                                                        MY_ENTRY_REQUEST_CODE);
                                              }
                                          }
 
@@ -41,7 +41,7 @@ public class SampleActivity extends Activity {
     }
 
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == MY_SCAN_REQUEST_CODE) {
+        if (requestCode == MY_ENTRY_REQUEST_CODE) {
             if (resultCode == CardEntryActivity.RESULT_OK) {
                 Card enterdCard = data.getParcelableExtra(CardEntryActivity.EXTRA_CARD_INFO);
                 if (enterdCard != null) {
