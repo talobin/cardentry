@@ -383,17 +383,14 @@ public class CreditCardEntry extends RelativeLayout implements OnTouchListener,
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
 
-        int currentapiVersion = android.os.Build.VERSION.SDK_INT;
-        int width, height;
+        int width;
 
-        if (currentapiVersion < 13) {
-            width = display.getWidth(); // deprecated
-            height = display.getHeight();
+        if (android.os.Build.VERSION.SDK_INT < 13) {
+            width = display.getWidth();
         } else {
             Point size = new Point();
             display.getSize(size);
             width = size.x;
-            height = size.y;
         }
 
         LayoutParams params =

@@ -4,8 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.talobin.cardentry.R;
 import com.talobin.cardentry.interfaces.Callback;
@@ -15,7 +15,7 @@ import com.talobin.cardentry.models.Card;
 /**
  * Created by hai on 4/17/15.
  */
-public class CreditCardForm extends RelativeLayout {
+public class CreditCardForm extends FrameLayout {
 
     private CreditCardEntry mEntry;
     private KeyPadView mKeyPad;
