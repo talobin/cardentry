@@ -68,7 +68,10 @@
     <style name="backspace">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:tint">@color/secondary_text</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
         <item name="android:clickable">true</item>
         <item name="android:paddingRight">@dimen/content_padding_2</item>
         <item name="android:paddingLeft">@dimen/content_padding_2</item>

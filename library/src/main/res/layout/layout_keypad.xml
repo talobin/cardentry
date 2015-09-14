@@ -83,19 +83,17 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:divider="@android:color/darker_gray"
             android:gravity="center"
             android:showDividers="middle">
 
-            <ImageView
+        <ImageView
                 android:id="@+id/key_scan"
                 style="@style/backspace"
-                android:src="@drawable/ic_action_camera"
-                android:adjustViewBounds="true"
-                android:scaleType="centerInside"
+                android:src="@drawable/ic_camera_alt_black_48dp"
                 android:visibility="invisible"
-                android:contentDescription="@string/delete"/>
+                android:contentDescription="@string/scan"/>
 
             <TextView
                 android:id="@+id/key_0"
@@ -105,9 +103,7 @@
             <ImageView
                 android:id="@+id/key_delete"
                 style="@style/backspace"
-                android:src="@drawable/backspace"
-                android:adjustViewBounds="true"
-                android:scaleType="centerInside"
+                android:src="@drawable/ic_backspace_black_48dp"
                 android:contentDescription="@string/delete"/>
         </TableRow>
 

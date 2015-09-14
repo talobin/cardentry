@@ -15,8 +15,9 @@
     <string name="number_nine">9</string>
     <string name="clear">X</string>
     <string name="number_zero">0</string>
-    <string name="delete"></string>
+    <string name="delete">Delete</string>
     <string name="close">CLOSE</string>
     <string name="use_this_card">USE THIS CARD</string>
+    <string name="scan">Scan</string>
 
 </resources>

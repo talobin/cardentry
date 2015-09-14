@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 import com.talobin.cardentry.R;
 import com.talobin.cardentry.interfaces.CreditCardDelegate;
@@ -15,7 +16,7 @@ import com.talobin.cardentry.interfaces.CreditCardDelegate;
 /**
  * Created by hai on 4/30/15.
  */
-public class KeyPadView extends RelativeLayout {
+public class KeyPadView extends RelativeLayout implements View.OnLayoutChangeListener {
     private CreditCardDelegate mDelegate;
     private TextView m1Key;
     private TextView m2Key;
@@ -31,6 +32,7 @@ public class KeyPadView extends RelativeLayout {
     private ImageView mCameraKey;
     private Context mContext;
     private boolean mDoneDrawing = false;
+    private int mPerfectHeight;
 
     public KeyPadView(Context context) {
         super(context);
@@ -51,6 +53,7 @@ public class KeyPadView extends RelativeLayout {
         mContext = context;
         final LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.layout_keypad, this, true);
+
         m1Key = (TextView) view.findViewById(R.id.key_1);
         m2Key = (TextView) view.findViewById(R.id.key_2);
         m3Key = (TextView) view.findViewById(R.id.key_3);
@@ -88,6 +91,9 @@ public class KeyPadView extends RelativeLayout {
         m0Key.setOnTouchListener(onTouchListener());
         mDeleteKey.setOnTouchListener(onTouchListener());
         mCameraKey.setOnTouchListener(onTouchListener());
+
+        //Hack to fix redrawing issue in some S3 phones
+        mDeleteKey.addOnLayoutChangeListener(this);
     }
 
     @Override protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
@@ -177,22 +183,39 @@ public class KeyPadView extends RelativeLayout {
         return m1Key.getMeasuredHeight();
     }
 
+    //Make sure Delete and Scan images are in perfect size
     private void drawViews() {
-
         if (!mDoneDrawing) {
-            final float textWidth = m1Key.getPaint().measureText("xx");
-            if (textWidth > 0) {
-                int currentPadding = mDeleteKey.getPaddingRight();
-                final float currentImageWidth =
-                    mDeleteKey.getWidth() - currentPadding - currentPadding;
-                final float difference = currentImageWidth - textWidth;
-                if (difference != 0) {
-                    mDoneDrawing = true;
-                    currentPadding += difference / 2;
-                    mDeleteKey.setPadding(currentPadding, 0, currentPadding, 0);
-                    mDeleteKey.requestLayout();
-                }
+            mDeleteKey.removeOnLayoutChangeListener(this);
+            TableRow.LayoutParams params = (TableRow.LayoutParams) mDeleteKey.getLayoutParams();
+            if (mPerfectHeight == 0) {
+                mPerfectHeight = m1Key.getHeight() / 2;
             }
+            params.height = mPerfectHeight;
+            mDeleteKey.setLayoutParams(params);
+            mCameraKey.setLayoutParams(params);
+            if (mDeleteKey.getHeight() > 0) {
+                mDoneDrawing = true;
+            }
+            mDeleteKey.addOnLayoutChangeListener(this);
+        }
+    }
+
+    /**
+     * Hack so that in S3 phone when it happens that
+     * images disappear, we can redraw them again
+     */
+    @Override public void onLayoutChange(View v,
+                                         int left,
+                                         int top,
+                                         int right,
+                                         int bottom,
+                                         int oldLeft,
+                                         int oldTop,
+                                         int oldRight,
+                                         int oldBottom) {
+        if (mDeleteKey != null && mDeleteKey.getHeight() == 0) {
+            mDoneDrawing = false;
         }
     }
 }
