@@ -11,7 +11,7 @@ Inspired by Square and https://github.com/dbachelder/CreditCardEntry
 ##### If you use gradle, then add the following dependency from `mavenCentral()`:
 
 ```
-compile 'com.talobin:card-entry:0.1.4'
+compile 'com.talobin:card-entry:0.1.5'
 ```
 
 ##### If you use something other than gradle, then:
