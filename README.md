@@ -5,15 +5,15 @@ Android Credit Card Entry
 Inspired by Square and https://github.com/dbachelder/CreditCardEntry
 
 ### Screen Shots
-1. Usage:
+## Usage:
 
-<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/1.gif" width=300>
-2. Support all cards : Amex, Dinners Club, Discover, Visa, Master, JCB
+<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/1.gif" width=201>
+## Support all cards : Amex, Dinners Club, Discover, Visa, Master, JCB
 
-<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/2.gif" width=300>
-3. Fully animated
+<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/2.gif" width=201>
+## Fully animated
 
-<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/3.gif" width=300>
+<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/3.gif" width=200>
 
 
 ### Setup
