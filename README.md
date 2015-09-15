@@ -6,11 +6,14 @@ Inspired by Square and https://github.com/dbachelder/CreditCardEntry
 
 ### Screen Shots
 1. Usage:
-![alt tag](https://github.com/talobin/cardentry/blob/master/SampleApp/raw/1.gif)
+
+<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/1.gif" width=300>
 2. Support all cards : Amex, Dinners Club, Discover, Visa, Master, JCB
-![alt tag](https://github.com/talobin/cardentry/blob/master/SampleApp/raw/2.gif)
+
+<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/2.gif" width=300>
 3. Fully animated
-![alt tag](https://github.com/talobin/cardentry/blob/master/SampleApp/raw/3.gif)
+
+<img src="https://github.com/talobin/cardentry/blob/master/SampleApp/raw/3.gif" width=300>
 
 
 ### Setup
