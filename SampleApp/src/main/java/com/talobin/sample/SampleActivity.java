@@ -29,7 +29,7 @@ public class SampleActivity extends Activity {
                                                  scanIntent.putExtra(CardEntryActivity.EXTRA_REQUIRE_CVV,
                                                                      true); // default: false
                                                  scanIntent.putExtra(CardEntryActivity.EXTRA_REQUIRE_POSTAL_CODE,
-                                                                     false); // default: false
+                                                                     true); // default: true
 
                                                  // MY_SCAN_REQUEST_CODE is arbitrary and is only used within this activity.
                                                  startActivityForResult(scanIntent,
