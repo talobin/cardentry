@@ -4,6 +4,14 @@ provides quick and easy way to enter credit/debit cards  in mobile apps.
 Android Credit Card Entry
 Inspired by Square and https://github.com/dbachelder/CreditCardEntry
 
+### Screen Shots
+1. Usage:
+![alt tag](https://github.com/talobin/cardentry/blob/master/SampleApp/raw/1.gif)
+2. Support all cards : Amex, Dinners Club, Discover, Visa, Master, JCB
+![alt tag](https://github.com/talobin/cardentry/blob/master/SampleApp/raw/2.gif)
+3. Fully animated
+![alt tag](https://github.com/talobin/cardentry/blob/master/SampleApp/raw/3.gif)
+
 
 ### Setup
 
