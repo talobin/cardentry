@@ -1,4 +1,4 @@
-CardEntry SDK for Android
+Credit Card Entry UI for Android
 ========================
 provides quick and easy way to enter credit/debit cards  in mobile apps.
 Android Credit Card Entry
