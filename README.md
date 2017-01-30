@@ -5,6 +5,10 @@ Android Credit Card Entry
 Inspired by Square and https://github.com/dbachelder/CreditCardEntry
 
 
+### Apps using CardEntry
+https://play.google.com/store/apps/details?id=com.sincerely.android.postagram
+https://play.google.com/store/apps/details?id=com.sincerely.android.ink
+
 ### Setup
 
 
